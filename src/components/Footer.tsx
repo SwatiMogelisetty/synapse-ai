@@ -163,7 +163,8 @@ export default function Footer() {
           {/* Scroll to top */}
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            aria-label="Scroll to top"
+            aria-label="Scroll to top of page"
+            type="button"
             style={{
               display: "flex",
               alignItems: "center",

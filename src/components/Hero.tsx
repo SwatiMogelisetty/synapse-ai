@@ -15,7 +15,8 @@ function ScrollTopButton() {
   return (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      aria-label="Scroll back to top"
+      aria-label="Back to top"
+      type="button"
       style={{
         position: "fixed",
         bottom: "32px",
@@ -350,10 +351,9 @@ export default function Hero() {
       </div>
 
       {/* Scroll cue */}
-      <div
+      <button
         aria-label="Scroll down to features"
-        role="button"
-        tabIndex={0}
+        type="button"
         onClick={() => document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })}
         onKeyDown={(e) => e.key === "Enter" && document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })}
         style={{
@@ -366,13 +366,15 @@ export default function Hero() {
           animation: "bounce 2s ease-in-out infinite",
           cursor: "pointer",
           transition: "opacity 150ms ease-out",
+          background: "transparent",
+          border: "none",
         }}
         onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.9")}
         onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.45")}
       >
         <span style={{ fontSize: "0.72rem", fontFamily: "var(--font-mono)", letterSpacing: "0.1em", color: "var(--mint)" }}>SCROLL</span>
         <Image src="/svgs/chevron-down.svg" alt="" width={16} height={16} style={{ filter: "invert(1)" }} />
-      </div>
+      </button>
 
       {/* Scroll-to-top pill — appears after scrolling down */}
       <ScrollTopButton />
