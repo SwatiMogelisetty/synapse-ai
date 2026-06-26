@@ -81,7 +81,8 @@ const PriceDisplay = memo(function PriceDisplay({
       annualRef.current.textContent = isAnnual
         ? `Billed ${sym}${(price * 12).toLocaleString()} / year`
         : "";
-      annualRef.current.style.visibility = isAnnual ? "visible" : "hidden";
+      annualRef.current.style.opacity = isAnnual ? "1" : "0";
+      annualRef.current.style.height = isAnnual ? "auto" : "0";
     }
   }, [tier, currency, isAnnual]);
 
@@ -116,7 +117,8 @@ const PriceDisplay = memo(function PriceDisplay({
           display: "block",
           minHeight: "1.2em",
           marginBottom: "4px",
-          visibility: isAnnual ? "visible" : "hidden",
+          opacity: isAnnual ? 1 : 0,
+          transition: "opacity 200ms ease-out",
         }}
       >
         {isAnnual ? `Billed ${CURRENCY_SYMBOLS[currency]}${(initialPrice * 12).toLocaleString()} / year` : ""}

@@ -169,15 +169,13 @@ export default function BentoFeatures() {
       </header>
 
       {/* ══ DESKTOP: Bento Grid ══ */}
-      <div className="bento-grid" aria-label="Features overview grid" role="list">
+      <div className="bento-grid" aria-label="Features overview grid">
         {features.map((f) => (
           <div
             key={f.id}
             className={`${f.span} entry-fade entry-delay-${(f.id % 4) + 1}`}
-            role="presentation"
           >
             <article
-              role="listitem"
               className={`bento-card${activeIndex === f.id ? " active" : ""}`}
               aria-label={f.title}
               tabIndex={0}
@@ -281,7 +279,7 @@ export default function BentoFeatures() {
               }}
               aria-hidden="true"
             >
-              <span>Learn more</span>
+              <span>Learn more about {f.tag}</span>
               <Image
                 src="/svgs/chevron-right.svg"
                 alt=""
@@ -304,7 +302,6 @@ export default function BentoFeatures() {
       {/* ══ MOBILE: Accordion (zero external deps) ══ */}
       <div
         className="accordion-features"
-        role="list"
         aria-label="Features accordion"
         style={{ display: "none" }}
       >
@@ -313,7 +310,6 @@ export default function BentoFeatures() {
           return (
             <div
               key={f.id}
-              role="listitem"
               className="accordion-item"
               style={{
                 borderBottom: "1px solid rgba(217,232,226,0.1)",

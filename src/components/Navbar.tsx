@@ -98,7 +98,6 @@ export default function Navbar() {
 
         {/* Desktop links */}
         <ul
-          role="list"
           style={{
             display: "flex",
             alignItems: "center",
