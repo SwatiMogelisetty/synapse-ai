@@ -86,7 +86,7 @@ export default function CTA() {
           style={{
             marginTop: "28px",
             fontSize: "0.78rem",
-            color: "rgba(217,232,226,0.4)",
+            color: "rgba(217,232,226,0.55)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",

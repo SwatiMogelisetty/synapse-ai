@@ -90,7 +90,6 @@ export default function FAQ() {
 
         {/* Accordion list */}
         <div
-          role="list"
           className="entry-fade entry-delay-3"
           style={{
             borderTop: "1px solid rgba(217,232,226,0.08)",
@@ -101,7 +100,6 @@ export default function FAQ() {
             return (
               <div
                 key={i}
-                role="listitem"
                 style={{ borderBottom: "1px solid rgba(217,232,226,0.08)" }}
               >
                 <button
@@ -209,7 +207,7 @@ export default function FAQ() {
             gap: "12px",
           }}
         >
-          <p style={{ fontSize: "0.9rem", color: "rgba(217,232,226,0.5)" }}>
+          <p style={{ fontSize: "0.9rem", color: "rgba(217,232,226,0.65)" }}>
             Still have questions?
           </p>
           <a

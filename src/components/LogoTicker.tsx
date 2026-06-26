@@ -38,7 +38,7 @@ export default function LogoTicker() {
           fontSize: "0.7rem",
           letterSpacing: "0.15em",
           textTransform: "uppercase",
-          color: "rgba(217,232,226,0.4)",
+          color: "rgba(217,232,226,0.55)",
           marginBottom: "20px",
         }}
       >
@@ -55,13 +55,13 @@ export default function LogoTicker() {
                 fontWeight: 700,
                 fontSize: "0.95rem",
                 letterSpacing: "0.05em",
-                color: "rgba(217,232,226,0.3)",
+                color: "rgba(217,232,226,0.55)",
                 whiteSpace: "nowrap",
                 transition: "color 150ms ease-out",
                 cursor: "default",
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "rgba(255,200,1,0.7)")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(217,232,226,0.3)")}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "rgba(255,200,1,0.9)")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(217,232,226,0.55)")}
             >
               {name}
             </span>

@@ -169,7 +169,7 @@ export default function Testimonials() {
                 >
                   {t.author}
                 </cite>
-                <span style={{ fontSize: "0.78rem", color: "rgba(217,232,226,0.5)" }}>
+                <span style={{ fontSize: "0.78rem", color: "rgba(217,232,226,0.65)" }}>
                   {t.role}, {t.company}
                 </span>
               </div>

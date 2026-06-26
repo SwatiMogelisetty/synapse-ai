@@ -75,7 +75,7 @@ export default function Footer() {
                 synapse<span style={{ color: "var(--forsythia)" }}>.ai</span>
               </span>
             </a>
-            <p style={{ fontSize: "0.875rem", color: "rgba(217,232,226,0.5)", lineHeight: 1.65, maxWidth: "240px" }}>
+            <p style={{ fontSize: "0.875rem", color: "rgba(217,232,226,0.65)", lineHeight: 1.65, maxWidth: "240px" }}>
               The AI-native data automation platform trusted by 12,000+ engineering teams worldwide.
             </p>
             {/* Social icons placeholder */}
@@ -129,12 +129,12 @@ export default function Footer() {
                       rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
                       style={{
                         fontSize: "0.875rem",
-                        color: "rgba(217,232,226,0.5)",
+                        color: "rgba(217,232,226,0.65)",
                         textDecoration: "none",
                         transition: "color 150ms ease-out",
                       }}
                       onMouseEnter={(e) => (e.currentTarget.style.color = "var(--arctic)")}
-                      onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(217,232,226,0.5)")}
+                      onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(217,232,226,0.65)")}
                     >
                       {label}
                     </a>
@@ -157,7 +157,7 @@ export default function Footer() {
             gap: "12px",
           }}
         >
-          <p style={{ fontSize: "0.8rem", color: "rgba(217,232,226,0.3)" }}>
+          <p style={{ fontSize: "0.8rem", color: "rgba(217,232,226,0.55)" }}>
             © {new Date().getFullYear()} Synapse AI, Inc. All rights reserved.
           </p>
 
@@ -192,7 +192,7 @@ export default function Footer() {
             Back to top
           </button>
 
-          <p style={{ fontSize: "0.8rem", color: "rgba(217,232,226,0.3)", display: "flex", alignItems: "center", gap: "6px" }}>
+          <p style={{ fontSize: "0.8rem", color: "rgba(217,232,226,0.55)", display: "flex", alignItems: "center", gap: "6px" }}>
             <Image src="/svgs/cog-8-tooth.svg" alt="" width={12} height={12} style={{ filter: "invert(0.3)" }} />
             Built with precision. Powered by intelligence.
           </p>

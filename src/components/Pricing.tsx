@@ -320,7 +320,7 @@ export default function Pricing() {
           className="entry-fade"
           style={{
             textAlign: "center", marginTop: "36px", fontSize: "0.82rem",
-            color: "rgba(217,232,226,0.4)", display: "flex",
+            color: "rgba(217,232,226,0.55)", display: "flex",
             alignItems: "center", justifyContent: "center", gap: "6px",
           }}
         >
