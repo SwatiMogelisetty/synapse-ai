@@ -6,29 +6,29 @@ const links: Record<string, Record<string, string>> = {
   Product: {
     Features:  "#features",
     Pricing:   "#pricing",
-    Changelog: "#",
-    Roadmap:   "#",
-    Status:    "#",
+    Changelog: "javascript:void(0)",
+    Roadmap:   "javascript:void(0)",
+    Status:    "javascript:void(0)",
   },
   Developers: {
-    "API Reference": "#",
-    SDKs:            "#",
-    CLI:             "#",
-    GitHub:          "https://github.com",
+    "API Reference": "javascript:void(0)",
+    SDKs:            "javascript:void(0)",
+    CLI:             "javascript:void(0)",
+    GitHub:          "https://github.com/SwatiMogelisetty/synapse-ai",
     FAQ:             "#faq",
   },
   Company: {
-    About:    "#",
-    Blog:     "#",
-    Careers:  "#",
-    Press:    "#",
+    About:    "javascript:void(0)",
+    Blog:     "javascript:void(0)",
+    Careers:  "javascript:void(0)",
+    Press:    "javascript:void(0)",
     Contact:  "#contact",
   },
   Legal: {
-    "Privacy Policy":    "#",
-    "Terms of Service":  "#",
-    "Cookie Policy":     "#",
-    Security:            "#",
+    "Privacy Policy":    "javascript:void(0)",
+    "Terms of Service":  "javascript:void(0)",
+    "Cookie Policy":     "javascript:void(0)",
+    Security:            "javascript:void(0)",
   },
 };
 
@@ -55,7 +55,7 @@ export default function Footer() {
           {/* Brand column */}
           <div>
             <a
-              href="#"
+              href="javascript:void(0)"
               aria-label="Synapse AI home"
               style={{ display: "flex", alignItems: "center", gap: "10px", textDecoration: "none", marginBottom: "16px" }}
             >
@@ -83,7 +83,7 @@ export default function Footer() {
               {["/svgs/link-solid.svg", "/svgs/arrow-trending-up.svg", "/svgs/search.svg"].map((src, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href="javascript:void(0)"
                   aria-label={["Website", "Updates", "Search"][i]}
                   style={{
                     width: 34, height: 34,

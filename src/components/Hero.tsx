@@ -352,7 +352,11 @@ export default function Hero() {
 
       {/* Scroll cue */}
       <div
-        aria-hidden="true"
+        aria-label="Scroll down to features"
+        role="button"
+        tabIndex={0}
+        onClick={() => document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })}
+        onKeyDown={(e) => e.key === "Enter" && document.getElementById("features")?.scrollIntoView({ behavior: "smooth" })}
         style={{
           marginTop: "48px",
           display: "flex",
@@ -361,7 +365,11 @@ export default function Hero() {
           gap: "6px",
           opacity: 0.45,
           animation: "bounce 2s ease-in-out infinite",
+          cursor: "pointer",
+          transition: "opacity 150ms ease-out",
         }}
+        onMouseEnter={(e) => (e.currentTarget.style.opacity = "0.9")}
+        onMouseLeave={(e) => (e.currentTarget.style.opacity = "0.45")}
       >
         <span style={{ fontSize: "0.72rem", fontFamily: "var(--font-mono)", letterSpacing: "0.1em", color: "var(--mint)" }}>SCROLL</span>
         <Image src="/svgs/chevron-down.svg" alt="" width={16} height={16} style={{ filter: "invert(1)" }} />
