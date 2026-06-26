@@ -127,14 +127,6 @@ export default function BentoFeatures() {
         entries.forEach((e) => {
           if (e.isIntersecting) {
             e.target.classList.add("visible");
-            // After animation finishes, remove entry-fade classes entirely
-            // so hover transitions on bento cards are never blocked
-            const el = e.target as HTMLElement;
-            const onEnd = () => {
-              el.classList.remove("entry-fade", "entry-delay-1", "entry-delay-2", "entry-delay-3", "entry-delay-4", "entry-delay-5");
-              el.removeEventListener("transitionend", onEnd);
-            };
-            el.addEventListener("transitionend", onEnd);
             observer.unobserve(e.target);
           }
         });
@@ -179,19 +171,22 @@ export default function BentoFeatures() {
       {/* ══ DESKTOP: Bento Grid ══ */}
       <div className="bento-grid" aria-label="Features overview grid" role="list">
         {features.map((f) => (
-          <article
+          <div
             key={f.id}
-            role="listitem"
-            className={`bento-card ${f.span} entry-fade entry-delay-${(f.id % 4) + 1} ${
-              activeIndex === f.id ? "active" : ""
-            }`}
-            aria-label={f.title}
-            tabIndex={0}
-            onMouseEnter={() => setActiveIndex(f.id)}
-            onMouseLeave={() => setActiveIndex(null)}
-            onFocus={() => setActiveIndex(f.id)}
-            onBlur={() => setActiveIndex(null)}
+            className={`${f.span} entry-fade entry-delay-${(f.id % 4) + 1}`}
+            role="presentation"
           >
+            <article
+              role="listitem"
+              className={`bento-card${activeIndex === f.id ? " active" : ""}`}
+              aria-label={f.title}
+              tabIndex={0}
+              onMouseEnter={() => setActiveIndex(f.id)}
+              onMouseLeave={() => setActiveIndex(null)}
+              onFocus={() => setActiveIndex(f.id)}
+              onBlur={() => setActiveIndex(null)}
+              style={{ height: "100%" }}
+            >
             {/* Icon */}
             <div
               style={{
@@ -302,6 +297,7 @@ export default function BentoFeatures() {
               />
             </div>
           </article>
+          </div>
         ))}
       </div>
 
