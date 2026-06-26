@@ -23,7 +23,6 @@ export default function Navbar() {
   return (
     <header
       ref={navRef}
-      role="banner"
       style={{
         position: "fixed",
         top: 0,

@@ -283,7 +283,6 @@ export default function Hero() {
           overflow: "hidden",
           backdropFilter: "blur(12px)",
         }}
-        role="img"
         aria-label="Code automation preview"
       >
         {/* Terminal chrome */}

@@ -35,7 +35,6 @@ const links: Record<string, Record<string, string>> = {
 export default function Footer() {
   return (
     <footer
-      role="contentinfo"
       style={{
         borderTop: "1px solid rgba(217,232,226,0.08)",
         padding: "72px 24px 40px",
@@ -120,7 +119,7 @@ export default function Footer() {
               >
                 {category}
               </h3>
-              <ul role="list" style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "10px" }}>
+              <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "10px" }}>
                 {Object.entries(items).map(([label, href]) => (
                   <li key={label}>
                     <a
