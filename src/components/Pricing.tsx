@@ -206,11 +206,11 @@ function PricingControls({
       <div className="billing-toggle">
         <span style={{ color: !isAnnual ? "var(--arctic)" : "var(--mint)", transition: "color 200ms ease-out" }}>Monthly</span>
         <button
-          role="switch"
           aria-checked={isAnnual}
           aria-label="Toggle annual billing"
           className={`toggle-track${isAnnual ? " annual" : ""}`}
           onClick={onToggle}
+          type="button"
         >
           <div className="toggle-thumb" />
         </button>

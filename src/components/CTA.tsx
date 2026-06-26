@@ -71,11 +71,11 @@ export default function CTA() {
           className="entry-fade entry-delay-3"
           style={{ display: "flex", justifyContent: "center", gap: "16px", flexWrap: "wrap" }}
         >
-          <a href="#contact" className="btn-primary">
+          <a href="#contact" className="btn-primary" aria-label="Start building for free - get started now">
             <Image src="/svgs/arrow-trending-up.svg" alt="" width={16} height={16} style={{ filter: "brightness(0)" }} />
             Start building free
           </a>
-          <a href="#features" className="btn-secondary">
+          <a href="#features" className="btn-secondary" aria-label="Browse all platform features">
             <Image src="/svgs/search.svg" alt="" width={14} height={14} style={{ filter: "invert(0.7)" }} />
             Explore features
           </a>

@@ -212,11 +212,11 @@ export default function Hero() {
             marginBottom: "64px",
           }}
         >
-          <a href="#pricing" className="btn-primary">
+          <a href="#pricing" className="btn-primary" aria-label="Start your free trial - go to pricing">
             <Image src="/svgs/arrow-trending-up.svg" alt="" width={16} height={16} style={{ filter: "brightness(0)" }} />
             Start Free Trial
           </a>
-          <a href="#features" className="btn-secondary">
+          <a href="#features" className="btn-secondary" aria-label="Explore platform features">
             <Image src="/svgs/chart-pie.svg" alt="" width={16} height={16} style={{ filter: "invert(1)" }} />
             Explore Features
           </a>
